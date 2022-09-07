@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(235, 21%, 11%);
+}
+
+.banner-con {
+  width: 100%;
+  height: 60vh;
+  border: 1px solid wheat;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  background: url(./images/bg-desktop-dark.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  border: 1px solid wheat;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30vh;
+}
+
+.content h1 {
+  letter-spacing: 2.8px;
+  color: antiquewhite;
+}
+
+.todo {
+  width: 600px;
+  max-height: 500px;
+}
+
+form {
+  width: 100%;
+  height: 80px;
+}
+
+form input {
+  width: 100%;
+  padding: 15px 30px;
+}

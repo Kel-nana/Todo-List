@@ -1,36 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Todo app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="banner-con">
+      <div class="banner">
+        <div class="content">
+          <gith1>Todo</h1>
+          <img src="./images/icon-sun.svg" alt="" />
+        </div>
+        <div class="">
+          <div class="todo">
+            <form action="">
+              <input type="text" placeholder="Create a new Todo list" />
+            </form>
+            <div class="list">
+              <div class="todo-con">
+                <div class="todo-li">
+                  <div class="check">
+                    <img src="./images/icon-check.svg" alt="" />
+                  </div>
+                  <p>Hello</p>
+                  <button class="close">
+                    <img src="./images/icon-cross.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="info">
+              <p>5 item left</p>
+              <div class="choice">
+                <p class="active">All</p>
+                <p>Active</p>
+                <p>Completed</p>
+              </div>
+              <p class="clear">Clear completed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="drag">Drag and drop to reorder
+        list</p>
+    </div>
 
-  Todo
 
-  <!-- Add dynamic number --> items left
 
-  All
-  Active 
-  Completed
-
-  Clear Completed
-
-  Drag and drop to reorder list
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="./apps.js"></script>
+  </body>
 </html>

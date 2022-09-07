@@ -62,6 +62,7 @@ form input {
   letter-spacing: 1.1px;
   outline: none;
   border: transparent;
+  margin-top: 1.8rem;
 }
 
 input::placeholder {

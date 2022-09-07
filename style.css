@@ -55,4 +55,17 @@ form {
 form input {
   width: 100%;
   padding: 15px 30px;
+  background: hsl(235, 24%, 19%);
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 1.1px;
+  outline: none;
+  border: transparent;
+}
+
+input::placeholder {
+  color: beige;
+  letter-spacing: 2px;
+  font-size: 16px;
 }

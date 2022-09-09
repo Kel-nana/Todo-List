@@ -13,7 +13,7 @@ body {
 .banner-con {
   width: 100%;
   height: 60vh;
-  border: 1px solid wheat;
+  /* border: 1px solid wheat; */
 }
 
 .banner {
@@ -30,7 +30,7 @@ body {
 }
 
 .content {
-  border: 1px solid wheat;
+  /* border: 1px solid wheat; */
   width: 600px;
   display: flex;
   justify-content: space-between;
@@ -95,6 +95,8 @@ input::placeholder {
   border-top-right-radius: 5px;
   font-style: italic;
   font-size: 17.5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .todo-li p {
@@ -111,6 +113,14 @@ input::placeholder {
   align-items: center;
   border-radius: 100%;
   margin-right: 8px;
+}
+
+.tick-active {
+  background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.tick-active img {
+  transform: scale(1) !important;
 }
 
 .todo-li .check img {
@@ -135,4 +145,52 @@ input::placeholder {
   width: 100%;
   height: 1px;
   background: rgb(156, 156, 142);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.infor {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(235, 24%, 19%);
+  color: hsl(234, 11%, 52%);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 35px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  cursor: pointer;
+}
+
+.infor {
+  padding: 0 13px;
+}
+
+.infor p:hover {
+  color: hsl(220, 98%, 61%);
+}
+
+.choice {
+  width: 50%;
+  /* border: 1px solid wheat; */
+  display: flex;
+}
+
+.choice p {
+  padding: 0 13px;
+}
+
+.clear {
+  margin-right: 20px;
+}
+
+.drag {
+  margin-top: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: hsl(234, 11%, 52%);
 }

@@ -93,8 +93,46 @@ input::placeholder {
   padding: 1rem 0.9rem;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  font-style: italic;
+  font-size: 17.5px;
 }
 
 .todo-li p {
   width: 90%;
+  color: beige;
+}
+
+.todo-li .check {
+  width: 20px;
+  height: 20px;
+  border: 1px solid hsl(233, 14%, 35%);
+  display: grid;
+  place-content: center;
+  align-items: center;
+  border-radius: 100%;
+  margin-right: 8px;
+}
+
+.todo-li .check img {
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.todo .close {
+  background: transparent;
+  border: none;
+  outline: none;
+  opacity: 0;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.todo-li:hover .close {
+  opacity: 1;
+}
+
+.break {
+  width: 100%;
+  height: 1px;
+  background: rgb(156, 156, 142);
 }

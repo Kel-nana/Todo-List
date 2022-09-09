@@ -42,6 +42,10 @@ body {
   color: antiquewhite;
 }
 
+.content img {
+  height: 35px;
+}
+
 .todo {
   width: 600px;
   max-height: 500px;
@@ -69,4 +73,28 @@ input::placeholder {
   color: beige;
   letter-spacing: 2px;
   font-size: 16px;
+}
+
+.list {
+  width: 100%;
+  max-height: 330px;
+  margin-top: 2rem;
+}
+
+.todo-con {
+  width: 100%;
+  background-color: hsl(235, 24%, 19%);
+  border-radius: 7px;
+}
+
+.todo-li {
+  display: flex;
+  background: hsl(235, 24%, 19%);
+  padding: 1rem 0.9rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.todo-li p {
+  width: 90%;
 }

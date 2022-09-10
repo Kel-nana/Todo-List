@@ -71,6 +71,7 @@ form input {
 
 input::placeholder {
   color: beige;
+  opacity: 0.4;
   letter-spacing: 2px;
   font-size: 16px;
 }

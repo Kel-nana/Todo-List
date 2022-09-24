@@ -15,8 +15,8 @@ function addtodo() {
     <img src="./images/icon-check.svg" alt="" />
   </div>
   <p>${todotext}</p> 
+  <div class ="edit-btn"> Edit</div>
   <div class="close-edit">
-    <p class="edit-btn">Edit</p>
     <button class="close">
       <img src="./images/icon-cross.svg" alt="" />
     </button>
@@ -25,6 +25,11 @@ function addtodo() {
 <div class="break"></div>
   `
   todoCon.appendChild(todoDowm);
+  const close = todoDowm.querySelector('.close');
+  close.addEventListener('click', () => {
+    todoDowm.remove();
+  })
+  
   
 }
 

@@ -116,9 +116,9 @@ input::placeholder {
   margin-right: 8px;
 }
 
-/* .tick-active {
+.tick-active {
   background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
-} */
+}
 
 .tick-active img {
   transform: scale(1) !important;
@@ -212,4 +212,9 @@ input::placeholder {
   align-items: center;
   font-size: 18px;
   color: hsl(234, 11%, 52%);
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
 }

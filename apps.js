@@ -11,7 +11,7 @@ function addtodo() {
   let todotext = text.value;
   todoDowm.innerHTML = `
   <div class="todo-li">
-  <div class="check tick-active">
+  <div class="check ">
     <img src="./images/icon-check.svg" alt="" />
   </div>
   <p>${todotext}</p> 
@@ -28,8 +28,14 @@ function addtodo() {
   const close = todoDowm.querySelector('.close');
   close.addEventListener('click', () => {
     todoDowm.remove();
-  })
-  
+  });
+
+  const check = todoDowm.querySelector('.check');
+
+  check.addEventListener('click', ()=> {
+    check.classList.toggle('tick-active')
+    todoDowm.children[0].children[1].classList.toggle('completed')
+  });
   
 }
 

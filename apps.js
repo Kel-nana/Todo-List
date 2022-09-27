@@ -15,7 +15,7 @@ e.preventDefault();
 let storagetext =JSON.parse(localStorage.getItem("storagetext"));
 
 if(storagetext) {
-//  storagetext=JSON.pars   e(storagetext);
+
  storagetext.forEach(item => {
    addtodo(item)
 
@@ -51,7 +51,7 @@ if(todotext){
   const close = todoDowm.querySelector('.close');
   close.addEventListener('click', () => {
     todoDowm.remove();
-    
+    update ();
   });
 
   const check = todoDowm.querySelector('.check');

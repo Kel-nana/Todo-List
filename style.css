@@ -216,5 +216,6 @@ input::placeholder {
 
 .completed {
   text-decoration: line-through;
+  color: yellow;
   opacity: 0.6;
 }

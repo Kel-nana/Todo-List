@@ -77,9 +77,9 @@ arr.push({
   localStorage.setItem("storagetext", JSON.stringify(arr));
 }
  
-let infor = document.querySelectorAll('.choice p'); 
-let todoli = document.querySelectorAll('.todo-li');
-console.log(infor);
+const infor = document.querySelectorAll('.choice p'); 
+const todoli = document.querySelectorAll('.todo-li');
+// console.log(infor);
 infor.forEach((item)=>{
   
   item.addEventListener('click', ()=>{
@@ -111,3 +111,45 @@ if(element.children[1].classList.contains('completed')){
 }
 });
 });
+ 
+const clear = document.querySelector(".clear");
+
+clear.addEventListener('click', ()=> {
+  todoli.forEach((item)=> {
+    console.log(item)
+    if(item.children[1].classList.contains('completed')){
+      item.remove()
+      update ();
+    }
+    // item.remove()
+  });
+});
+
+const left = document.querySelector(".left");
+function setItem() {
+ let activeTodo=document.querySelectorAll(".todo-li .tick-active")
+ console.log(activeTodo)
+ let difference = todoli.length-activeTodo.length
+console.log(difference);
+left.innerText=`${difference} items left`
+}
+
+setItem();
+
+const light = document.querySelector(".light-d");
+const background = document.querySelector("body");
+const formBg = document.querySelector("form input");
+const todoliBg =document.querySelectorAll(".todo-li");
+const inforbg =document.querySelector(".infor");
+// left.addEventListener('click', ()=> {
+  light.addEventListener('click', ()=> {
+   console.log(background.classList.toggle('lighter')); 
+   formBg.classList.toggle('lighter')
+   inforbg.classList.toggle('lighter')
+   todoliBg.forEach((item)=> {
+    item.classList.toggle("lighter");
+   })
+  
+  });
+// })
+

@@ -31,10 +31,10 @@ function addtodo(textSt) {
 if(todotext){
   todoDowm.innerHTML = `
   <div class="todo-li">
-  <div class="check " >
+  <div class="check ${textSt && textSt.complete? 'tick-active':""}" >
     <img src="./images/icon-check.svg" alt="" />
   </div>
-  <p class = "store" >${todotext}</p> 
+  <p class = "store ${textSt && textSt.complete? 'completed ':""}" >${todotext}</p> 
   <div class ="edit-btn"> Edit</div>
   <div class="close-edit">
     <button class="close">
@@ -76,3 +76,38 @@ arr.push({
   });
   localStorage.setItem("storagetext", JSON.stringify(arr));
 }
+ 
+let infor = document.querySelectorAll('.choice p'); 
+let todoli = document.querySelectorAll('.todo-li');
+console.log(infor);
+infor.forEach((item)=>{
+  
+  item.addEventListener('click', ()=>{
+    infor.forEach((elem)=>{
+elem.classList.remove('active');
+
+    })
+    item.classList.add('active')
+if(item.innerText=="Active"){
+todoli.forEach((element)=> {
+if(element.children[1].classList.contains('completed')){
+  element.style.display="none";
+}else{
+  element.style.display="flex";
+}
+})
+}else if(item.innerText=="Completed"){
+  todoli.forEach((element)=> {
+    if(element.children[1].classList.contains('completed')){
+      element.style.display="flex";
+    }else{ 
+      element.style.display="none";
+    }
+    })
+}else{
+  todoli.forEach((element)=> {
+    element.style.display="flex";
+    })
+}
+});
+});

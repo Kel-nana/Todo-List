@@ -85,6 +85,7 @@ input::placeholder {
   width: 100%;
   max-height: 330px;
   margin-top: 2rem;
+  overflow-y: auto;
 }
 
 .todo-con {

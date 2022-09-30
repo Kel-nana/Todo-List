@@ -126,13 +126,15 @@ clear.addEventListener('click', ()=> {
 });
 
 const left = document.querySelector(".left");
-function setItem() {
+
+setInterval( function setItem() {
  let activeTodo=document.querySelectorAll(".todo-li .tick-active")
  console.log(activeTodo)
- let difference = todoli.length-activeTodo.length
+ let difference = storagetext.length-activeTodo.length
 console.log(difference);
 left.innerText=`${difference} items left`
-}
+ 
+},100)
 
 setItem();
 

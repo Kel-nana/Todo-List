@@ -29,6 +29,8 @@
                 type="text"
                 placeholder="Create a new Todo list"
                 id="text"
+                onfocus="this.value=''"
+                value=""
               />
             </form>
             <div class="list">
@@ -37,7 +39,7 @@
               </div>
             </div>
             <div class="infor">
-              <p class="left">5 item left</p>
+              <p class="left">0 item left</p>
               <div class="choice">
                 <p class="active">All</p>
                 <p>Active</p>
@@ -52,5 +54,10 @@
     </div>
 
     <script src="./apps.js"></script>
+    <script language="javascript">
+      setInterval(function () {
+        window.location.reload(1);
+      }, 30000);
+    </script>
   </body>
 </html>
